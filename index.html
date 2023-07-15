@@ -1,29 +1,33 @@
-<!doctype html>
+<!-- HTML FILE -->
+
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./Images/SiteIcon.svg" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./Images/SiteIcon.svg" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>The Hustlers</title>
 </head>
 
 <body>
+    <!-- navbar scroll from top side -->
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light" id="Navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./Images/TheHustlersLogo.png" alt="brand">
+                <img src="./Images/TheHustlersLogo.png" alt="brand" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,21 +40,25 @@
                     <a class="nav-link" href="./Editor/editor.html">Live Editor</a>
                     <a class="nav-link" href="/draw/draw.html">Draw</a>
                 </div>
-                <a href="#footer" class="connect btn btn-outline-secondary shadow-sm d-sm d-block">Connect Us</a>
+                <div class="contact">
+                    <a href="#footer" class="connect btn btn-outline-secondary shadow-sm d-sm d-block">Connect Us</a>
+                </div>
             </div>
         </div>
     </nav>
 
+
+    <!-- sec scroll from left to right -->
     <!-- hero sec -->
     <section class="hero">
         <div class="container">
             <div class="row">
                 <!-- text -->
                 <div class="col-md-6">
-                    <div class="text">
-                        Welcome to The Hustlers.🚀
-                    </div>
-                    <p>Join us in building a Space for Programmers to Make coding fun.</p>
+                    <div class="text">Welcome to The Hustlers.</div>
+                    <p class="text1">
+                        Join us in building a Space for Programmers to Make coding fun.
+                    </p>
                     <div class="buttons">
                         <a href="#information" class="btn btn-primary">Explore</a>
                         <a href="#Navbar" class="btn btn-outline-secondary ms-3">Try Now</a>
@@ -58,57 +66,59 @@
                 </div>
                 <!-- image -->
                 <div class="col-md-6">
-                    <img src="./Images/HomeImage.png" alt="hero-image" class="w-100">
+                    <!-- this section scroll from right to left -->
+                    <img src="./Images/HomeImage.png" alt="hero-image" class="w-100" />
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!-- setup section -->
     <section class="setup" id="setup">
         <div class="container">
             <div class="text-header text-center">
-                <h3>Get Started Quickly without the hassle</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, id.</p>
+                <!-- this section scroll from right to left -->
+                <h3 class="h3">Get Started Quickly without the hassle</h3>
             </div>
-            <div class="items text-center">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="icons">
-                            <img src="./Images/Eat.svg" alt="icons">
+
+            <div id="Skills">
+                <div class="container">
+                    <!-- this section is scroll from top to bottom -->
+                    <h1 class="sub-title">My Skills</h1>
+
+                    <div class="Skills-list">
+                        <!-- this section scroll from left to right -->
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Online Compiler</h2>
+                            <p>An online compiler is a web-based tool that allows users to write, compile, and run
+                                computer programs directly from a web browser without the need for installing any
+                                software or development environment on their local machine</p>
+                            <a href="#">learn more</a>
                         </div>
-                        <div class="desc">
-                            <h5>Eat</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptas nulla culpa
-                                deserunt
-                                voluptate ipsa dolore.</p>
+                        <div>
+                            <i class="fa-brands fa-uncharted"></i>
+                            <h2>Live Editor</h2>
+                            <p>The Live Editor is a software tool that allows users to write, run, and debug code in
+                                real-time. It provides an interactive environment where code can be written and executed
+                                test, and iterate on code quickly. </p>
+                            <a href="#">learn more</a>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="icons">
-                            <img src="./Images/Code.svg" alt="icons">
-                        </div>
-                        <div class="desc">
-                            <h5>Code</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptas nulla culpa
-                                deserunt
-                                voluptate ipsa dolore.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="icons">
-                            <img src="./Images/repeat.png" alt="icons">
-                        </div>
-                        <div class="desc">
-                            <h5>Repeat</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptas nulla culpa
-                                deserunt
-                                voluptate ipsa dolore.</p>
+                        <div>
+                            <i class="fa-brands fa-app-store"></i>
+                            <h2>Real-time Chat</h2>
+                            <p>Real-time chat refers to a form of communication that enables instant messaging and
+                                conversation between two or more people over the internet.it's meaning there is little
+                                to no delay between sending and
+                                receiving messages.</p>
+                            <a href="#">learn more</a>
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
         </div>
     </section>
 
@@ -119,27 +129,36 @@
                 <!-- text -->
                 <div class="col-md-6">
                     <div class="text-information">
-                        <h5>Connect with Programmers.</h5>
-                        <p>The Codie Guy is an amazing way to meet people in your local area and connect with other
-                            like-minded people.</p>
+                        <!-- this section scroll from left to right -->
+                        <h5 class="h5">Connect with Programmers.</h5>
+                        <p class="p">
+                            The Codie Guy is an amazing way to meet people in your local
+                            area and connect with other like-minded people.
+                        </p>
                     </div>
                 </div>
                 <!-- image -->
+                <!-- this section scroll from right to left -->
                 <div class="col-md-6">
-                    <img src="./Images/Image1.png" alt="img-1" class="w-100">
+                    <img src="./Images/Image1.png" alt="img-1" class="w-70" />
                 </div>
             </div>
             <div class="row info-2">
                 <!-- image -->
                 <div class="col-md-6">
+                    <!-- this section scroll from bottom to top -->
                     <img src="./Images/Image2.png" alt="img-1" class="w-100">
                 </div>
                 <!-- text -->
                 <div class="col-md-6">
                     <div class="text-information">
-                        <h5>Code Online With Us.</h5>
-                        <p>Our community is a place to share your knowledge, find interesting projects and collaborate
-                            on ideas. We help each other grow and learn from each other.</p>
+                        <!-- this section scroll from top to bottom -->
+                        <h5 id="h5">Code Online With Us.</h5>
+                        <p id="p">
+                            Our community is a place to share your knowledge, find
+                            interesting projects and collaborate on ideas. We help each
+                            other grow and learn from each other.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -152,21 +171,37 @@
             <div class="row justify-content-center">
                 <div class="col-md-9 text-center">
                     <div class="footer-site-logo mb-4">
-                        <a href="#"><img src="./Images/TheHustlersLogo.png" alt="footer-site-logo"></a>
+                        <!-- this section scroll from top to bottom -->
+                        <a href="#"><img src="./Images/TheHustlersLogo.png" alt="footer-site-logo" class="img" /></a>
                     </div>
+                    <a href="https://cloud.appwrite.io/card/645168e9e8ebff8b2fcc">
+
+                    </a>
                     <div class="social">
-                        <a href="https://www.linkedin.com/in/aryangajjar1509/"><i class="fa-brands fa-linkedin"><p>Aryan</p></i></a>
-                        <a href="https://www.linkedin.com/in/khushal-khandelwal/"><i class="fa-brands fa-linkedin"><p >Khushal</p></i></a>
-                        <a href="https://www.linkedin.com/in/aditya-gajjar-b15a5324a/"><i class="fa-brands fa-linkedin"><p>Aditya</p></i></a>
-                        <a href="https://www.linkedin.com/in/ayush-patel-90267a224/"><i class="fa-brands fa-linkedin"><p>Ayush</p></i></a>
-                        <a href="https://www.linkedin.com/in/#"><i class="fa-brands fa-linkedin"><p>Bharat</p></i></a>
+                        <!-- this section scroll from left to right -->
+                        <a href="https://www.linkedin.com/in/aryangajjar1509/"><i class="fa-brands fa-linkedin">
+                                <p>Aryan</p>
+                            </i></a>
+                        <a href="https://www.linkedin.com/in/khushal-khandelwal/"><i class="fa-brands fa-linkedin">
+                                <p>Khushal</p>
+                            </i></a>
+                        <a href="https://www.linkedin.com/in/aditya-gajjar-b15a5324a/"><i class="fa-brands fa-linkedin">
+                                <p>Aditya</p>
+                            </i></a>
+                        <a href="https://www.linkedin.com/in/ayush-patel-90267a224/"><i class="fa-brands fa-linkedin">
+                                <p>Ayush</p>
+                            </i></a>
+                        <a href="https://www.linkedin.com/in/bharat-bhangale-398818248"><i
+                                class="fa-brands fa-linkedin">
+                                <p>Bharat</p>
+                            </i></a>
                     </div>
-                    <p class="copy">Made with ❤️ The Hustlers @ Parul</p>
+                    <!-- this section scroll from bottom to top -->
+                    <p class="copy">The Hustlers @ Parul: Let's Hack</p>
                 </div>
             </div>
         </div>
     </footer>
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -179,7 +214,27 @@
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
     -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        ScrollReveal({
+  reset: true,
+  distance: "50px",
+  duration: "1000",
+  delay: 200,
+});
+ScrollReveal().reveal(
+  ".navbar-brand,.nav-link,.contact,.sub-title,#h5,#p,.img",
+  { origin: "top" }
+);
+ScrollReveal().reveal(" .w-100,.w-70,.copy", { origin: "bottom" });
+ScrollReveal().reveal(".text,.buttons,.text1,.Skills-list,.social,.h5,.p", {
+  origin: "left",
+});
+ScrollReveal().reveal(".h3,.w-70", { origin: "right" });
+    </script>
 </body>
 
 </html>
