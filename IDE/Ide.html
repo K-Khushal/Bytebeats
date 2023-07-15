@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./Images/SiteIcon.svg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <title>IDE</title>
+    <!-- Styling -->
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .wrapper {
+            display: flex;
+            height: 100vh;
+        }
+
+        .main {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .side-panel-toggle {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            color: #ffffff;
+            background: #0FC3C5;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .side-panel-toggle:hover {
+            background: #007960;
+        }
+
+        .sp-icon-close {
+            display: none !important;
+        }
+
+        .side-panel {
+            padding: 5px;
+            display: none;
+            width: 300px;
+            height: 720px;
+            flex-shrink: 0;
+            color: #09FFE5;
+            background: #1F1E2A;
+            box-shadow: 0 0 10px #0FC3C5;
+            border-radius: 0 0 0 15px;
+        }
+
+        .side-panel-open .side-panel {
+            display: initial;
+        }
+
+        .side-panel-open .sp-icon-open {
+            display: none !important;
+        }
+
+        .side-panel-open .sp-icon-close {
+            display: initial !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/Images/TheHustlersLogo.png" alt="brand">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="/index.html">Home</a>
+                    <a class="nav-link active" href="#">Online Compiler</a>
+                    <a class="nav-link" href="/Editor/editor.html">Live Editor</a>
+                    <a class="nav-link" href="/draw/draw.html">Draw</a>
+                </div>
+                <a href="#footer" class="btn btn-outline-secondary shadow-sm d-sm d-block">Connect Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- setup section -->
+    <section class="setup" id="setup" style="padding: 50px 0;">
+        <div class="container">
+            <div class="text-header text-center">
+                <h3>Get Started Quickly witgout the hassle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, id.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player -->
+
+    <div class="wrapper">
+        <div class="main">
+            <div class="container">
+                <!-- Compiler -->
+                <iframe frameBorder="0" height="600px" id="oc-editor" width="100%"
+                    src="https://onecompiler.com/embed/python"></iframe>
+            </div>
+        </div>
+        <button class="side-panel-toggle" type="button">
+            <span class="sp-icon-open"><i class="fa-solid fa-headphones fa-xl"></i></span>
+            <span class="sp-icon-close"><i class="fa-solid fa-headphones fa-xl"></i></span>
+        </button>
+        <div class="side-panel">
+            <!-- Spotify Player -->
+            <iframe style="border-radius:12px;"
+                src="https://open.spotify.com/embed/playlist/4shT4CzubLfSwzvVfZueBG?utm_source=generator" width="100%"
+                height="351px" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/51tg0ekTD4HAtTXRutAwcC?utm_source=generator" width="100%"
+                height="351" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 text-center">
+                    <div class="footer-site-logo mb-4">
+                        <a href="#"><img src="/Images/TheHustlersLogo.png" alt="footer-site-logo"></a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/aryangajjar1509/"><i class="fa-brands fa-linkedin"><p>Aryan</p></i></a>
+                        <a href="https://www.linkedin.com/in/khushal-khandelwal/"><i class="fa-brands fa-linkedin"><p >Khushal</p></i></a>
+                        <a href="https://www.linkedin.com/in/aditya-gajjar-b15a5324a/"><i class="fa-brands fa-linkedin"><p>Aditya</p></i></a>
+                        <a href="https://www.linkedin.com/in/ayush-patel-90267a224/"><i class="fa-brands fa-linkedin"><p>Ayush</p></i></a>
+                    </div>
+                    <p class="copy">The Hustlers @ HackNUthon 4.0</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slider -->
+    <script>
+        const sidePanelToggle = document.querySelector(".side-panel-toggle");
+        const sidePanelClose = document.querySelector(".side-panel-close");
+        const wrapper = document.querySelector(".wrapper");
+        const sidePanel = document.querySelector(".side-panel");
+
+        sidePanelToggle.addEventListener("click", () => {
+            wrapper.classList.toggle("side-panel-open");
+            sidePanelToggle.innerHTML = wrapper.classList.contains("side-panel-open") ? '<i class="fa-solid fa-headphones fa-xl"></i>' : '<i class="fa-solid fa-headphones fa-xl"></i>';
+        });
+
+        sidePanelClose.addEventListener("click", () => {
+            wrapper.classList.remove("side-panel-open");
+            sidePanelToggle.innerHTML = '<span class="material-icons sp-icon-open">keyboard_double_arrow_left</span>';
+        });
+
+        window.addEventListener("load", () => {
+            wrapper.classList.remove("side-panel-open");
+        });
+
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
